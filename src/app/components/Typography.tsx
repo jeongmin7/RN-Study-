@@ -41,8 +41,16 @@ const variantStyles: Record<Variant, TextStyle> = {
   },
 };
 
-function Typography({ children, variant = "md" }: TypographyProps) {
-  return <Text style={[variantStyles[variant], styles.text]}>{children}</Text>;
+function Typography({ children, variant = "md", ...props }: TypographyProps) {
+  return (
+    <Text
+      style={[variantStyles[variant], styles.text]}
+      allowFontScaling={false}
+      {...props}
+    >
+      {children}
+    </Text>
+  );
 }
 
 const styles = StyleSheet.create({
