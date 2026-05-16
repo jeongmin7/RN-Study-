@@ -52,6 +52,7 @@ const styles = StyleSheet.create({
   },
   descriptionContainer: {
     flexDirection: "row",
+    justifyContent: "space-between",
   },
 });
 
