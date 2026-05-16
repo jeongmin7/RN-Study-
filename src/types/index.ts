@@ -5,4 +5,4 @@ export type PillColor =
   | "ORANGE"
   | "PURPLE"
   | "GRAY"
-  | "YELLLOW";
+  | "YELLOW";

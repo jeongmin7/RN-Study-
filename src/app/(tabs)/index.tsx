@@ -1,11 +1,17 @@
 import { StyleSheet } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import CustomButton from "../components/CustomButton";
 import MedicationItem from "../components/MedicationItem";
 
 export default function Home() {
   return (
     <SafeAreaView style={styles.container}>
-      <MedicationItem name="비타민" memo="1정" timing="식후 30분" />
+      <MedicationItem
+        name="비타민"
+        memo="1정"
+        timing="식후 30분"
+        footer={<CustomButton label="추가" size="medium" />}
+      />
     </SafeAreaView>
   );
 }
