@@ -5,7 +5,7 @@ import MedicationItem from "../components/MedicationItem";
 export default function Home() {
   return (
     <SafeAreaView style={styles.container}>
-      <MedicationItem name="비타민" memo="1정" timing="식후 30분 " />
+      <MedicationItem name="비타민" memo="1정" timing="식후 30분" />
     </SafeAreaView>
   );
 }

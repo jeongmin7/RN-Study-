@@ -1,7 +1,9 @@
+import { PillColor } from "@/types";
 import React, { ReactNode } from "react";
 import { StyleSheet, View } from "react-native";
 import { colors } from "../constants";
 import Badge from "./Badge";
+import Pill from "./Pill";
 import Typography from "./Typography";
 
 interface MedicationItemProps {
@@ -10,6 +12,7 @@ interface MedicationItemProps {
   name: string;
   memo: string;
   timing?: string;
+  color?: PillColor;
 }
 
 function MedicationItem({
@@ -18,11 +21,13 @@ function MedicationItem({
   name,
   memo,
   timing,
+  color = "RED",
 }: MedicationItemProps) {
   return (
     <View style={styles.container}>
       {header}
       <View style={styles.contentsContainer}>
+        <Pill color={color} />
         <View style={{ flex: 1, gap: 3 }}>
           <Typography variant="lg">{name}</Typography>
           <View style={styles.descriptionContainer}>
@@ -44,6 +49,7 @@ const styles = StyleSheet.create({
     paddingVertical: 20,
     paddingHorizontal: 24,
     backgroundColor: "#fff",
+    gap: 12,
   },
   contentsContainer: {
     flexDirection: "row",
