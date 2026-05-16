@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(superpowers:systematic-debugging)",
+      "Bash(watchman version *)",
+      "Bash(watchman watch-list *)",
+      "Bash(watchman shutdown-server *)",
+      "Bash(watchman watch *)",
+      "WebFetch(domain:docs.expo.dev)"
+    ]
+  }
+}
