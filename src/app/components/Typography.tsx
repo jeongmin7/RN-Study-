@@ -1,6 +1,6 @@
+import { colors } from "@/constants";
 import React, { ReactNode } from "react";
 import { StyleSheet, Text, TextProps, TextStyle } from "react-native";
-import { colors } from "../constants";
 
 type Variant = "xxl" | "xl" | "lg" | "md" | "sm" | "xs";
 interface TypographyProps extends TextProps {

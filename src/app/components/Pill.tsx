@@ -1,8 +1,8 @@
+import { colors } from "@/constants";
 import { PillColor } from "@/types";
 import React from "react";
 import { Pressable, PressableProps, StyleSheet } from "react-native";
 import Svg, { Defs, LinearGradient, Path, Stop } from "react-native-svg";
-import { colors } from "../constants";
 
 const pillColors = {
   RED: { main: "#FF6B57", sub: "#FF4A36" },

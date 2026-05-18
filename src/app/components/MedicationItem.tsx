@@ -1,7 +1,7 @@
+import { colors } from "@/constants";
 import { PillColor } from "@/types";
 import React, { ReactNode } from "react";
 import { StyleSheet, View } from "react-native";
-import { colors } from "../constants";
 import Badge from "./Badge";
 import Pill from "./Pill";
 import Typography from "./Typography";
