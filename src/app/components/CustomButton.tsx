@@ -1,3 +1,4 @@
+import { colors } from "@/constants";
 import { Size } from "@/types";
 import React from "react";
 import {
@@ -7,7 +8,6 @@ import {
   TextStyle,
   ViewStyle,
 } from "react-native";
-import { colors } from "../constants";
 
 type Size = "large" | "medium";
 type SizeStyle = Record<Size, { viewStyle: ViewStyle; textStyle: TextStyle }>;
